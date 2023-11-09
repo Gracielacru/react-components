@@ -1,0 +1,38 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*,    /*esto me permite que yo no haga calculos en cuanto al margen*/
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+.container {
+    width:500px; /*ancho de mi contenedor*/
+    margin: 50px auto; /* margen de arriba 50px y cuando crezca de abajo será igual, auto me permite centrar*/
+    display: flex;
+    flex-direction: column; /*nos permite que container sea el papá y pueda tener a los cuatro contenedores como hijos*/
+}
+.container * {
+    text-align: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+.clear {
+    flex-basis: 150px;
+    background-color: rgb(194, 171, 171);
+}
+.increment {
+    flex-basis: 150px;
+    background-color:  rgb(194, 171, 171);
+    padding-right: 10px;
+}
+.reverse {
+    flex-basis: 150px;
+    background-color:  rgb(194, 171, 171);
+}
+.show {
+    flex-basis: 150px;
+    background-color: rgb(194, 171, 171);
+}
